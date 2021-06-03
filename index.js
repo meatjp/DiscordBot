@@ -6,9 +6,9 @@ client.on('ready', () => {
 })
 
 client.on('message', async msg => {
-  if (msg.content === '!ping') {
+  if (msg.mentions.users.has(client.user.id) && msg.content.match(/!ping/)) {
     msg.channel.send('Pong!')
   }
 })
 
-client.login('ODQ5NzQxMzQ1ODUzOTMxNTIy.YLflTA.YOLLr_HWtpMXjOPANbKCiQjYdDk')
+client.login('ODQ5NzQxMzQ1ODUzOTMxNTIy.YLflTA.E_GfxBbvVPVSRfWd12h79yYSBlo')
